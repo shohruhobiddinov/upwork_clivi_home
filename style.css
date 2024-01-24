@@ -1,0 +1,708 @@
+@font-face {
+  font-family: "RussoOne";
+  src: url("./fonts/Russo_One/RussoOne-Regular.ttf");
+}
+@font-face {
+  font-family: "Bender";
+  src: url("./fonts/bender-cufonfonts/Jovanny Lemonad - Bender-Light.otf");
+}
+* {
+  scrollbar-color: #874adc #241535;
+  scrollbar-width: thin;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+body {
+  width: 95%;
+  height: auto;
+  margin: auto;
+  background-color: #120a17;
+  color: white;
+}
+body .main-page {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/Mask group.png");
+  background-size: cover;
+}
+body .main-page .navbar {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+body .main-page .navbar .nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .main-page .navbar .nav-left img {
+  width: 45%;
+}
+body .main-page .navbar .nav-left h3 {
+  font-family: "RussoOne";
+  font-weight: normal;
+  cursor: pointer;
+  transition: 0.5s;
+}
+body .main-page .navbar .nav-left h3:hover {
+  color: gray;
+}
+body .main-page .navbar .nav-right button {
+  width: 160px;
+  height: 53px;
+  top: 32px;
+  left: 1209.1px;
+  border-radius: 8px;
+  color: white;
+  font-family: "Bender";
+  font-size: 90%;
+  transition: 0.5s;
+}
+body .main-page .navbar .nav-right button:nth-child(1) {
+  background-color: transparent;
+  border: 1px solid #32253b;
+}
+body .main-page .navbar .nav-right button:nth-child(1):hover {
+  background-color: #32253b;
+  border: none;
+}
+body .main-page .navbar .nav-right button:nth-child(2) {
+  background-color: #32253b;
+  border: none;
+}
+body .main-page .navbar .nav-right button:nth-child(2):hover {
+  background-color: transparent;
+  border: 1px solid #32253b;
+}
+body .main-page .inside-main {
+  width: 100%;
+  height: 80%;
+  text-align: center;
+  position: relative;
+}
+body .main-page .inside-main h1 {
+  margin: auto;
+  font-family: "RussoOne";
+  font-size: 500%;
+  font-weight: normal;
+}
+body .main-page .inside-main p {
+  color: gray;
+  font-family: "Bender";
+  font-size: 150%;
+  margin: 3% 0 5% 0;
+}
+body .main-page .inside-main button {
+  width: 40%;
+  height: 25%;
+  border-radius: 25px;
+  border: 2px;
+  background-color: #32253b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "RussoOne";
+  font-size: 170%;
+  margin: auto;
+  gap: 3%;
+}
+body .main-page .inside-main .leftGun {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+}
+body .main-page .inside-main .rightGun {
+  position: absolute;
+  top: 5%;
+  right: 0%;
+}
+body .main-page .inside-main .mittens {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+}
+body .main-page .inside-main .box {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+}
+body .partners-page {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+body .partners-page h2 {
+  color: #74fbfb;
+  font-family: "Bender";
+  font-size: 200%;
+  font-weight: normal;
+}
+body .partners-page .companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3% 0 5% 0;
+  gap: 3%;
+}
+body .partners-page .companies img:nth-child(1) {
+  width: 20%;
+}
+body .partners-page .companies img:nth-child(2) {
+  width: 15%;
+}
+body .partners-page h3 {
+  font-family: "RussoOne";
+  font-size: 150%;
+  font-weight: normal;
+  margin-bottom: 5%;
+}
+body .step-page {
+  width: 100%;
+  height: auto;
+  text-align: start;
+}
+body .step-page h3 {
+  font-family: "RussoOne";
+  font-weight: normal;
+  font-size: 150%;
+}
+body .step-page .h3-underline {
+  text-decoration: underline;
+  color: #74fbfb;
+}
+body .step-page h2 {
+  font-family: "RussoOne";
+  font-weight: normal;
+  font-size: 180%;
+  margin: 2% 0 1% 0;
+}
+body .step-page p {
+  font-family: "Bender";
+  font-weight: normal;
+  font-size: 120%;
+  color: gray;
+}
+body .step-page .buttons {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+body .step-page .assets {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+body .step-page .assets .selects {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin: 3% 0;
+}
+body .step-page .assets .cards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body .step-page .assets .cards .card {
+  width: 18%;
+  height: auto;
+  overflow: visible;
+  text-align: center;
+  margin-bottom: 5%;
+}
+body .step-page .assets .cards .card .image {
+  background-color: #211629;
+  width: 100%;
+  height: 90%;
+  border-radius: 5%;
+  padding: 10% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+body .step-page .assets .cards .card .image img {
+  transition: 0.5s;
+  width: 80%;
+}
+body .step-page .assets .cards .card p {
+  width: 100%;
+  height: 9%;
+  margin-top: 1%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+body .step-page .assets .cards .card:hover .image {
+  background-color: #32253b;
+}
+body .step-page .assets .cards .card:hover .image img {
+  transform: scale(1.1);
+}
+body .step-page .assets .cards .card:hover p {
+  color: #74fbfb;
+}
+body .step-page .assets .cards-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 2% 0 5% 0;
+}
+body .step-page .assets .cards-down button {
+  color: white;
+  padding: 1% 1.5%;
+  background-color: #31243a;
+  border: 1px solid #31243a;
+  border-radius: 10px;
+  margin: 0 1%;
+}
+body .step-page .assets .cards-down button:nth-child(2) {
+  background-color: transparent;
+  padding: 1%;
+}
+body .step-page .buttons-3 {
+  margin: 5% auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+body .step-page .buttons-3 .flex {
+  display: flex;
+  align-items: center;
+  font-family: "RussoOne";
+}
+body .step-page .buttons-3 img:nth-child(1) {
+  width: 100%;
+  margin-right: 10%;
+}
+body .step-page .buttons-3 img:nth-child(2) {
+  width: 10%;
+  margin-bottom: 2%;
+}
+body .step-page .buttons-3 img:nth-child(3) {
+  width: 3%;
+}
+body .step-page .buttons-3 h4 {
+  width: 150%;
+  overflow: hidden;
+}
+body .step-page .choosenGun {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+body .step-page .choosenGun .middle {
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+body .step-page .choosenGun .middle .hand {
+  margin-top: 5%;
+}
+body .step-page .choosenGun .middle .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+body .step-page .choosenGun .middle .cards .card {
+  background-color: #211332;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7% 4%;
+  border-radius: 10%;
+  border: 2px solid #2f2237;
+  transition: 0.5s;
+}
+body .step-page .choosenGun .middle .cards .card img {
+  transition: 0.5s;
+}
+body .step-page .choosenGun .middle .cards .card:hover {
+  background-color: #1c2a33;
+  border: 2px solid #6ff0f0;
+}
+body .step-page .choosenGun .middle .cards .card:hover img {
+  transform: scale(1.1);
+}
+body .step-page .choosenGun .middle .input-img {
+  margin-right: 50%;
+}
+body .step-page .choosenGun .middle .input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 2% 0 2% 3%;
+  position: relative;
+  margin: 3% 0;
+}
+body .step-page .choosenGun .middle .input p {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+body .step-page .choosenGun .middle .input button {
+  width: 20%;
+  background-color: #874adc;
+  color: white;
+  font-family: "RussoOne";
+  border-radius: 10px;
+  position: absolute;
+  font-size: 120%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+body .step-page .choosenGun .middle .input button:hover {
+  color: #874adc;
+  background-color: transparent;
+  border: 2px solid #874adc;
+}
+body .step-page .choosenGun .middle .buttons button {
+  border-radius: 7px;
+  padding: 2% 8%;
+  color: white;
+  border: none;
+}
+body .step-page .choosenGun .middle .buttons button:nth-child(1) {
+  background-color: #511e74;
+  font-family: "RussoOne";
+}
+body .step-page .choosenGun .middle .buttons button:nth-child(2) {
+  background-color: #1b161d;
+  display: flex;
+  align-items: center;
+  gap: 5%;
+  font-family: "Bender";
+}
+body .step-page .choosenGun .middle .absolute {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  left: -20%;
+  bottom: 5%;
+}
+body .step-page .choosenGun .middle .absolute img {
+  width: 40px;
+}
+body .step-page .choosenGun .middle .absolute button {
+  border-radius: 7px;
+  color: white;
+  border: none;
+  background-color: #241535;
+  font-family: "RussoOne";
+  padding: 0 7px;
+}
+body .step-3-page {
+  background-image: url(./assets/Mask\ group.png);
+  background-size: 100% 120%;
+}
+body .faq {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+body .faq h1 {
+  font-family: "RussoOne";
+  text-align: center;
+  margin-bottom: 3%;
+}
+body .faq .cards {
+  width: 100%;
+  text-align: start;
+}
+body .faq .cards .card {
+  width: 96%;
+  background-color: #1d1424;
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 120%;
+  margin: 2% 0;
+}
+body .faq .cards .card .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .faq .cards .card .header h3 {
+  font-family: "RussoOne";
+  font-weight: normal;
+}
+body .faq .cards .card .line {
+  width: 100%;
+  height: 2px;
+  background-color: #4f4755;
+  margin: 1% 0;
+}
+body .faq .cards .card p {
+  color: white;
+  font-family: "Bender";
+  letter-spacing: 2px;
+}
+body .faq img {
+  width: 30%;
+}
+body .footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  font-size: 120%;
+}
+body .footer .card {
+  width: 30%;
+}
+body .footer .card h2 {
+  font-family: "RussoOne";
+  font-weight: normal;
+  margin: 3% 0;
+}
+body .footer .card .icons {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+}
+body .footer .card .icons img {
+  width: 7%;
+}
+body .footer .card p {
+  font-family: "Bender";
+  letter-spacing: 1px;
+  margin: 3% 0;
+  display: flex;
+  align-items: center;
+  gap: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+  body .main-page {
+    height: auto;
+  }
+  body .main-page .navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  body .main-page .navbar .nav-left {
+    text-align: center;
+  }
+  body .main-page .navbar .nav-left img {
+    width: 25%;
+  }
+  body .main-page .inside-main {
+    width: 90%;
+    margin: 5% auto;
+    height: auto;
+  }
+  body .main-page .inside-main h1 {
+    font-size: 300%;
+    margin: 8% 0;
+  }
+  body .main-page .inside-main button {
+    width: 90%;
+    height: 70px;
+  }
+  body .main-page .inside-main .leftGun {
+    display: none;
+  }
+  body .main-page .inside-main .rightGun {
+    display: none;
+  }
+  body .main-page .inside-main .mittens {
+    display: none;
+  }
+  body .main-page .inside-main .box {
+    display: none;
+  }
+  body .partners-page .companies {
+    margin: 10% 0;
+  }
+  body .partners-page .companies img:nth-child(1) {
+    width: 45%;
+  }
+  body .partners-page .companies img:nth-child(2) {
+    width: 40%;
+  }
+  body .partners-page h3 {
+    font-size: 170%;
+  }
+  body .step-page {
+    width: 90%;
+    margin: auto;
+  }
+  body .step-page h3 {
+    margin: 5% 0;
+  }
+  body .step-page h2 {
+    margin: 5% 0;
+  }
+  body .step-page .buttons {
+    flex-wrap: wrap;
+  }
+  body .step-page .buttons img {
+    margin: 5% 0;
+  }
+  body .step-page .assets .cards {
+    flex-wrap: wrap;
+  }
+  body .step-page .assets .cards .card {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 8%;
+  }
+  body .step-page .assets .cards-down button {
+    padding: 3% 5%;
+  }
+  body .step-page .assets .cards-down button:nth-child(2) {
+    padding: 3%;
+  }
+  body .step-page .buttons-3 {
+    width: 100%;
+    justify-content: space-between;
+  }
+  body .step-page .buttons-3 img:nth-child(1) {
+    width: 200%;
+    margin-right: 10%;
+  }
+  body .step-page .buttons-3 img:nth-child(2) {
+    width: 30%;
+    margin-bottom: 2%;
+  }
+  body .step-page .buttons-3 img:nth-child(3) {
+    width: 15%;
+  }
+  body .step-page .choosenGun {
+    flex-wrap: wrap;
+  }
+  body .step-page .choosenGun .left {
+    width: 100%;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .step-page .choosenGun .left img {
+    width: 20%;
+    transform: rotate(90deg);
+  }
+  body .step-page .choosenGun .middle {
+    width: 100%;
+  }
+  body .step-page .choosenGun .middle img {
+    width: 100%;
+    margin: 5% 0;
+  }
+  body .step-page .choosenGun .middle .hand {
+    width: 10%;
+  }
+  body .step-page .choosenGun .middle .cards {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  body .step-page .choosenGun .middle .cards .card {
+    width: 35%;
+    margin: 2% 1%;
+  }
+  body .step-page .choosenGun .middle .input {
+    height: 30px;
+    padding: 2% 0;
+  }
+  body .step-page .choosenGun .middle .input p {
+    margin-left: 5%;
+    font-size: 100%;
+  }
+  body .step-page .choosenGun .middle .input p img {
+    display: none;
+  }
+  body .step-page .choosenGun .middle .input button {
+    width: 40%;
+    font-size: 100%;
+  }
+  body .step-page .choosenGun .middle .buttons {
+    margin: 10% 0;
+  }
+  body .step-page .choosenGun .middle .buttons button {
+    padding: 0% 8%;
+  }
+  body .step-page .choosenGun .middle .buttons button:nth-child(1) {
+    width: 45%;
+  }
+  body .step-page .choosenGun .middle .buttons button:nth-child(2) {
+    width: 45%;
+  }
+  body .step-page .choosenGun .middle .absolute {
+    display: none;
+  }
+  body .step-page .choosenGun .right {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .step-page .choosenGun .right img {
+    width: 30%;
+    transform: rotate(90deg);
+  }
+  body .faq h1 {
+    margin: 5% 0;
+  }
+  body .faq .cards {
+    width: 90%;
+    margin: auto;
+  }
+  body .faq .cards .card {
+    width: 90%;
+    margin: 8% 0;
+    padding: 5%;
+  }
+  body .faq .cards .card .header h3:nth-child(2) {
+    display: none;
+  }
+  body .faq .cards .card .line {
+    margin: 5% 0;
+  }
+  body .faq img {
+    width: 90%;
+  }
+  body .footer {
+    flex-wrap: wrap;
+  }
+  body .footer .card {
+    width: 90%;
+    margin: 3% auto;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #874adc;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #241535;
+}/*# sourceMappingURL=style.css.map */
