@@ -204,6 +204,7 @@ body .step-page .assets .selects {
   justify-content: center;
   gap: 5%;
   margin: 3% 0;
+  overflow: hidden;
 }
 body .step-page .assets .cards {
   width: 100%;
@@ -492,6 +493,8 @@ body .footer .card p {
 @media only screen and (max-width: 600px) {
   body {
     width: 100%;
+    font-size: 70%;
+    letter-spacing: 2px;
   }
   body .main-page {
     height: auto;
@@ -601,6 +604,7 @@ body .footer .card p {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   body .step-page .choosenGun .left img {
     width: 20%;
@@ -660,6 +664,7 @@ body .footer .card p {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
   }
   body .step-page .choosenGun .right img {
     width: 30%;

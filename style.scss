@@ -207,6 +207,7 @@ body {
         justify-content: center;
         gap: 5%;
         margin: 3% 0;
+        overflow: hidden;
       }
       .cards {
         width: 100%;
@@ -507,6 +508,8 @@ body {
 @media only screen and (max-width: 600px) {
   body {
     width: 100%;
+    font-size: 70%;
+    letter-spacing: 2px;
     .main-page {
       height: auto;
       .navbar {
@@ -627,6 +630,7 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+          overflow: hidden;
           img {
             width: 20%;
             transform: rotate(90deg);
@@ -686,6 +690,7 @@ body {
           display: flex;
           align-items: center;
           justify-content: center;
+          overflow: hidden;
           img {
             width: 30%;
             transform: rotate(90deg);
@@ -727,10 +732,13 @@ body {
       .card {
         width: 90%;
         margin: 3% auto;
+
       }
     }
   }
 }
+
+
 
 ::-webkit-scrollbar {
   width: 8px;
