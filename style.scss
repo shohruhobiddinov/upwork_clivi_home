@@ -97,11 +97,11 @@ body {
         margin: 3% 0 5% 0;
       }
       button {
-        width: 40%;
-        height: 25%;
+        width: 488px;
+        height: 130px;
         border-radius: 25px;
-        border: 2px;
-        background-color: #32253b;
+        background-color: #472b5c4e;
+        border: 2px solid #8351a6;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -110,6 +110,10 @@ body {
         font-size: 170%;
         margin: auto;
         gap: 3%;
+        transition: .5s;
+        &:hover{
+          background-color: #19121d;
+        }
       }
       .leftGun {
         position: absolute;

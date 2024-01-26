@@ -98,11 +98,11 @@ body .main-page .inside-main p {
   margin: 3% 0 5% 0;
 }
 body .main-page .inside-main button {
-  width: 40%;
-  height: 25%;
+  width: 488px;
+  height: 130px;
   border-radius: 25px;
-  border: 2px;
-  background-color: #32253b;
+  background-color: rgba(71, 43, 92, 0.3058823529);
+  border: 2px solid #8351a6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,6 +111,10 @@ body .main-page .inside-main button {
   font-size: 170%;
   margin: auto;
   gap: 3%;
+  transition: 0.5s;
+}
+body .main-page .inside-main button:hover {
+  background-color: #19121d;
 }
 body .main-page .inside-main .leftGun {
   position: absolute;
